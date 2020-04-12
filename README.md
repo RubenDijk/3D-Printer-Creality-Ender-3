@@ -2,6 +2,7 @@
 Needs:
 
 OctoPrint installed on a Raspberry pi 2b or newer.
+Raspberry Pi Camera.
 Home Assistant.
 a 3d printer (I use a creality ender 3).
 smart plug (I use a sonoff S20).
