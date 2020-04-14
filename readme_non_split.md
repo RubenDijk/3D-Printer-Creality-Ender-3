@@ -1,6 +1,11 @@
-### Configuration.yaml (non split)
+# Configuration.yaml (non split)
 
 Example config:
+
+### configuration.yaml
+````
+rest_command: !include ender3_rest_commands.yaml
+````
 
 ### script:
 ````
@@ -131,7 +136,7 @@ script:
         data:
           cmd: "M600"
 ````
-### rest_command:
+### ender3_rest_commands.yaml:
 ````
 rest_command:
   ender3_job_command:
