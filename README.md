@@ -2,7 +2,7 @@
 ##### Created by Ruben Dijk
 ---
 ### Needs:
-* octoprint installd on a Raspberry pi 2b or newer.
+* octoprint installed on a Raspberry pi 2b or newer.
 * Raspberry pi Camera.
 * A running Home Assistant
 * 3D Printer (I use a creality Ender 3)
