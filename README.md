@@ -23,24 +23,6 @@ camera: (configuration.yaml)
 place switch under the switch: (configuration.yaml)
 place the automation under automation.yaml
 Place everything from the scripts folder under script.yaml 
-
-Example
-script.yaml
-
-script:
-- ender3_cancel_print:
-  alias: Ender3 Cancel
-  sequence:
-    - service: rest_command.ender3_job_command
-      data:
-        payload: '{"command": "cancel"}''.
-
-- ender3_change_filament:
-  alias: Ender3 Filament Change
-  sequence:
-    - service: rest_command.ender3_printer_command
-      data:
-        cmd: "M600"
   
 Reboot HA and you are ready to go.
   
