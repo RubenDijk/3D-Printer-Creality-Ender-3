@@ -24,7 +24,7 @@ place switch under the switch: (configuration.yaml)
 place the automation under automation.yaml
 Place everything from the scripts folder under script.yaml 
 
-`Example
+Example
 script.yaml
 
 script:
@@ -40,7 +40,7 @@ script:
   sequence:
     - service: rest_command.ender3_printer_command
       data:
-        cmd: "M600"`
+        cmd: "M600"
   
 Reboot HA and you are ready to go.
   
