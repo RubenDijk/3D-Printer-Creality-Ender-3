@@ -16,7 +16,7 @@
 5.  Reboot HA and you are ready to go.
 
 ### configuration.yaml (no split config)
-* [Check readme non split](https://github.com/RubenDijk/ender3-home-assistant/blob/master/redme_non_split.md/)
+* [Check readme non split](https://github.com/RubenDijk/ender3-home-assistant/blob/master/readme_non_split.md/)
 
 ### Links:
 * https://www.home-assistant.io/.
