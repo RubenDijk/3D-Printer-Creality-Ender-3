@@ -1,6 +1,6 @@
-# Creality Ender 3 Home-Assistant View
+## Creality Ender 3 Home-Assistant View
 ##### Created by Ruben Dijk
-
+---
 ### Needs:
 * octoprint installd on a Raspberry pi 2b or newer.
 * Raspberry pi Camera.
@@ -24,9 +24,17 @@
 **Control Off:**<br>
 ![Control Off](https://github.com/RubenDijk/ender3-home-assistant/blob/master/view%20control%20off.png "Control Off")
 
+---
+
 **Control On:**<br>
 ![light](https://github.com/RubenDijk/ender3-home-assistant/blob/master/view%20control%20on.png "Control On")
 
 ### Links:
 * https://www.home-assistant.io/.
 * https://octoprint.org/.
+
+---
+
+If you like my work please feel free to buy me a coffee
+
+<a href="https://www.buymeacoffee.com/RubenDijk" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/white_img.png" alt="Buy Me A Coffee"></a>
