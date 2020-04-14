@@ -1,4 +1,5 @@
 # Creality Ender 3 Home-Assistant View
+##### Created by Ruben Dijk
 
 ### Needs:
 * octoprint installd on a Raspberry pi 2b or newer.
@@ -17,6 +18,14 @@
 
 ### configuration.yaml (no split config)
 * [Check readme non split](https://github.com/RubenDijk/ender3-home-assistant/blob/master/readme_non_split.md/)
+
+### Screenshots:
+
+**Control Off:**<br>
+![Control Off](https://github.com/RubenDijk/ender3-home-assistant/blob/master/view%20control%20off.png "Control Off")
+
+**Control On:**<br>
+![light](https://github.com/RubenDijk/ender3-home-assistant/blob/master/view%20control%20on.png "Control On")
 
 ### Links:
 * https://www.home-assistant.io/.
