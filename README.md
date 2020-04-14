@@ -1,31 +1,23 @@
 # Creality Ender 3 Home-Assistant View
-Needs:
 
-OctoPrint installed on a Raspberry pi 2b or newer.
-Raspberry Pi Camera.
-Home Assistant.
-a 3d printer (I use a creality ender 3).
-smart plug (I use a sonoff S20).
-  
-installation:
-  
-Copy the files and place them in the correct location.
-If necessary, customize the following files with ip-address, smartplug name. printer properties
-After doing this check if your configuration (HA) is still valid. 
-  
-When using split config:
-Copy the content from the folders to the correct folders
+### Needs:
+* octoprint installd on a Raspberry pi 2b or newer.
+* Raspberry pi Camera.
+* A running Home Assistant
+* 3D Printer (I use a creality Ender 3)
+* Smartplug (I use a Sonoff S20)
 
-configuration.yaml (no split config)
+### Installation (split config): 
+  
+1.  Copy the files and place them in the correct location.
+2.  If necessary, customize the following files with ip-address, API, smartplug name. printer properties
+3.  After doing this check if your configuration (HA) is still valid. 
+4.  Copy the content from the folders to the correct folders
+5.  Reboot HA and you are ready to go.
 
-octoprint: (configuration.yaml)
-camera: (configuration.yaml)
-place switch under the switch: (configuration.yaml)
-place the automation under automation.yaml
-Place everything from the scripts folder under script.yaml 
-  
-Reboot HA and you are ready to go.
-  
-Links:
-https://www.home-assistant.io/.
-https://octoprint.org/.
+### configuration.yaml (no split config)
+* [Check readme non split](https://github.com/RubenDijk/ender3-home-assistant/blob/master/redme_non_split.md/)
+
+### Links:
+* https://www.home-assistant.io/.
+* https://octoprint.org/.
