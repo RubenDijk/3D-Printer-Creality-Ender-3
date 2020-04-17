@@ -12,6 +12,7 @@
 ### Installation (dwains-theme)
 Add the following to your more_page.yaml file:
 change name: 'Printer Name' to your printer name.
+Next folow: Installation (split config)
 
 ````
       - name: Printer Name
@@ -22,10 +23,13 @@ change name: 'Printer Name' to your printer name.
 ### Installation (split config): 
   
 1.  Copy the files and place them in the correct location.
-2.  If necessary, customize the following files with ip-address, API, smartplug name. printer properties
+2.  If necessary, customize the following files:
+    * entities/octoprints/ender3.yaml: ip-address, API, printer name, printer properties
+    * entities/cameras/ender3_cam.yaml: still_image_url, mjpeg_url, name, platform if necessary depends on with camera you used.
+    * entities/switches/ender3_shutdown.yaml: change 'switch.smartplug_relay' it to your own switch
+    * entities/rest_commands/rest_cmd_ender3.yaml: url and X-Api-Key
 3.  After doing this check if your configuration (HA) is still valid. 
-4.  Copy the content from the folders to the correct folders
-5.  Reboot HA and you are ready to go.
+4.  Reboot HA and you are ready to go.
 
 ### configuration.yaml (no split config)
 * [Check readme non split](https://github.com/RubenDijk/ender3-home-assistant/blob/master/readme_non_split.md/)

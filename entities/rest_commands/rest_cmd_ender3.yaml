@@ -1,0 +1,53 @@
+---
+# This integration can expose regular REST commands as services.
+# Services can be called from a script or in automation.
+#
+# https://www.home-assistant.io/integrations/rest_command/
+#
+# Url exemple: 'http://xxx.xxx.x.xx/api/job'
+rest_command:
+  ender3_job_command:
+    url: !secret ender3_octoprint_api_job_command
+    payload: '{{ payload }}'
+    headers:
+        Content-Type: 'application/json'
+        X-Api-Key: !secret ender3_octoprint_api_key
+    method: POST
+# Url exemple: 'http://xxx.xxx.x.xx/api/printer/printhead'
+  ender3_home:
+    url: !secret ender3_octoprint_printhead_command
+    payload: '{"command": "home", "axes": ["x", "y", "z"]}'
+    headers:
+        Content-Type: 'application/json'
+        X-Api-Key: !secret ender3_octoprint_api_key
+    method: POST
+# Url exemple: 'http://xxx.xxx.x.xx/api/printer/tool'
+  ender3_nozzle_temp:
+    url: !secret ender3_octoprint_tool_command
+    payload: '{"command": "target", "targets": {"tool0": {{ temp }} }}'
+    headers:
+        Content-Type: 'application/json'
+        X-Api-Key: !secret ender3_octoprint_api_key
+    method: POST
+# Url exemple: 'http://xxx.xxx.x.xx/api/printer/bed'
+  ender3_bed_temp:
+    url: !secret ender3_octoprint_bed_command
+    payload: '{"command": "target", "target": {{ temp }} }'
+    headers:
+        Content-Type: 'application/json'
+        X-Api-Key: !secret ender3_octoprint_api_key
+    method: POST
+# Url exemple: 'http://xxx.xxx.x.xx/api/printer/command'
+  ender3_printer_command:
+    url: !secret ender3_octoprint_printer_command
+    payload: '{"command": "{{ cmd }}"}'
+    headers:
+        Content-Type: 'application/json'
+        X-Api-Key: !secret ender3_octoprint_api_key
+    method: POST
+# Url exemple: 'http://xxx.xxx.x.xx/api/system/commands/core/shutdown'
+  ender3_octoprint_shutdown:
+    url: !secret ender3_octoprint_api_shutdown
+    headers:
+        X-Api-Key: !secret ender3_octoprint_api_key
+    method: POST
