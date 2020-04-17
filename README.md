@@ -1,5 +1,5 @@
 ## Creality Ender 3 Home-Assistant View 
-## More_page for dwains-theme
+### More_page for dwains-theme
 ##### Created by Ruben Dijk
 ---
 ### Needs:
