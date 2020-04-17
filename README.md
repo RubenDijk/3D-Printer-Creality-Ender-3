@@ -11,9 +11,10 @@
 
 ### Installation (dwains-theme)
 Add the following to your more_page.yaml file:
+change name: 'Printer Name' to your printer name.
 
 ````
-      - name: Creality Ender 3
+      - name: Printer Name
         icon: 'mdi:printer-3d'
         path: 'dwains-theme/addons/more_page/creality_ender/ender3.yaml'
 ````
